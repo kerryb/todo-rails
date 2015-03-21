@@ -6,3 +6,8 @@ end
 When "I go to the home page" do
   visit root_path
 end
+
+Then "I can see all the items" do
+  expect(page).to have_css "ul li", text: @item_1.name
+  expect(page).to have_css "ul li", text: @item_2.name
+end
