@@ -4,6 +4,7 @@ class ItemsController < ApplicationController
   end
 
   def create
+    Item.create params.require(:item).permit :name
     redirect_to action: :index
   end
 end
