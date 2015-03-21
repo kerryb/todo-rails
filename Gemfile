@@ -10,5 +10,6 @@ gem "uglifier"
 
 group :development, :test do
   gem "byebug"
+  gem "rspec-rails"
   gem "web-console"
 end
