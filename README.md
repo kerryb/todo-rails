@@ -24,3 +24,6 @@ be useful:
   capybara on pages that use javascript
 * [capybara-screenshot](https://github.com/mattheworiordan/capybara-screenshot)
   to automatically open a screenshot of the current page when a test fails
+
+Personally, I'd also use [haml](http://haml.info/) instead of erb for the view
+templating, but we're sticking with the default here for simplicity.
