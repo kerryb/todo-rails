@@ -4,5 +4,6 @@ class ItemsController < ApplicationController
   end
 
   def create
+    redirect_to action: :index
   end
 end
