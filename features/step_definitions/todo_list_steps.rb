@@ -9,10 +9,15 @@ end
 
 When "I add a to-do item" do
   visit root_path
-  add_item "Make this test pass"
+  @new_item_name = "Make this test pass"
+  add_item @new_item_name
 end
 
 Then "I can see all the items" do
   expect(page).to show_todo_item @item_1
   expect(page).to show_todo_item @item_2
+end
+
+Then "it appears in the list" do
+  expect(page).to show_todo_item Item.new(name: @new_item_name)
 end
