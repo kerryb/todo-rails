@@ -8,6 +8,6 @@ When "I go to the home page" do
 end
 
 Then "I can see all the items" do
-  expect(page).to have_css "ul li", text: @item_1.name
-  expect(page).to have_css "ul li", text: @item_2.name
+  expect(page).to show_todo_item @item_1
+  expect(page).to show_todo_item @item_2
 end
