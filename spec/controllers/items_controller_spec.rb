@@ -15,6 +15,15 @@ describe ItemsController do
   end
 
   describe "POST create" do
+    before do
+      allow(Item).to receive :create
+    end
+
+    it "creates a new item" do
+      post :create, item: {name: "do it!"}
+      expect(Item).to have_received(:create).with name: "do it!"
+    end
+
     it "redirects to the index" do
       post :create
       expect(response).to redirect_to action: :index
