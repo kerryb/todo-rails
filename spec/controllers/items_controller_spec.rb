@@ -13,4 +13,11 @@ describe ItemsController do
       expect(assigns[:items]).to eq items
     end
   end
+
+  describe "POST create" do
+    it "redirects to the index" do
+      post :create
+      expect(response).to redirect_to action: :index
+    end
+  end
 end
