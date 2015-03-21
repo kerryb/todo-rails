@@ -1,14 +1,14 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'coffee-rails'
-gem 'jquery-rails'
-gem 'rails'
-gem 'sass-rails'
-gem 'sqlite3'
-gem 'turbolinks'
-gem 'uglifier'
+gem "coffee-rails"
+gem "jquery-rails"
+gem "rails"
+gem "sass-rails"
+gem "sqlite3"
+gem "turbolinks"
+gem "uglifier"
 
 group :development, :test do
-  gem 'byebug'
-  gem 'web-console'
+  gem "byebug"
+  gem "web-console"
 end
