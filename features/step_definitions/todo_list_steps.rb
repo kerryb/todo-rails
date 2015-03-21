@@ -7,6 +7,11 @@ When "I go to the home page" do
   visit root_path
 end
 
+When "I add a to-do item" do
+  visit root_path
+  add_item "Make this test pass"
+end
+
 Then "I can see all the items" do
   expect(page).to show_todo_item @item_1
   expect(page).to show_todo_item @item_2
