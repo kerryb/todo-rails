@@ -1,4 +1,5 @@
 $background-colour: #acc;
+$done-colour: #888;
 
 body {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -28,6 +29,11 @@ ul {
     
     &:first-child {
       border-top: none;
+    }
+
+    &.done {
+      color: $done-colour;
+      text-decoration: line-through;
     }
 
     a {
