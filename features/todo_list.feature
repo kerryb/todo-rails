@@ -5,7 +5,6 @@ Feature: to-do list
     When I go to the home page
     Then I can see all the items
 
-  @wip
   Scenario: Add an item to my to-do list
     When I add a to-do item
     Then it appears in the list

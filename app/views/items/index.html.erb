@@ -1,3 +1,8 @@
 <ul>
   <%= render @items %>
 </ul>
+<%= form_for Item.new do |f| %>
+  <%= f.label :name, "New item:" %>
+  <%= f.text_field :name %>
+  <%= f.submit "Add" %>
+<% end %>
