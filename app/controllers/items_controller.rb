@@ -9,5 +9,6 @@ class ItemsController < ApplicationController
   end
 
   def mark_done
+    redirect_to action: :index
   end
 end
