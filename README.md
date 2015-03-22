@@ -7,6 +7,11 @@ See full commit messages for step-by-step description. Where files were changed
 by running a command rather than manually, that step will be a separate commit,
 with the command(s) listed in the commit message.
 
+The steps in the history are more-or-less as I actually did them, but a glance
+at the commit dates will make it obvious that I've gone back and rebased a
+couple of things where I missed something out or changed my mind, in order to
+keep a clean narrative.
+
 To keep things simple, we're not using any additional testing tools apart from
 RSpec and Cucumber (apart from Database Cleaner and Capybara, which Cucumber
 depends on by default). In a real project, some or all of the following might
