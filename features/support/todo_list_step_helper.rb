@@ -20,3 +20,11 @@ RSpec::Matchers.define :show_todo_item do |item|
 
   failure_message { %(Expected page to contain a list item "#{item.name}") }
 end
+
+RSpec::Matchers.define :show_item_as_done do |item|
+  match do |page|
+    page.has_css? "li.done", text: item.name
+  end
+
+  failure_message { %(Expected page to show item "#{item.name}" as done) }
+end
