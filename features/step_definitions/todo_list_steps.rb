@@ -13,6 +13,11 @@ When "I add a to-do item" do
   add_item @new_item_name
 end
 
+When "I click on an item" do
+  visit root_path
+  click_item @item_1
+end
+
 Then "I can see all the items" do
   expect(page).to show_todo_item @item_1
   expect(page).to show_todo_item @item_2
