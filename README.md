@@ -3,9 +3,29 @@
 Created for a demo of TDD with [http://rubyonrails.org/](Rails), using
 [http://rspec.info/](RSpec) and [https://cukes.info/](Cucumber).
 
+To run the app:
+
+    rake db:migrate
+    bin/rails s
+
+Then go to [localhost:3000](http://localhost:3000) in your browser.
+
+To run the tests:
+
+    rake
+
 See full commit messages for step-by-step description. Where files were changed
 by running a command rather than manually, that step will be a separate commit,
 with the command(s) listed in the commit message.
+
+To check out a specific version of the code:
+
+    git log
+
+Find the SHA of the commit you want to check out, then:
+
+    git checkout <SHA>
+    rake db:reset
 
 The steps in the history are more-or-less as I actually did them, but a glance
 at the commit dates will make it obvious that I've gone back and rebased a
