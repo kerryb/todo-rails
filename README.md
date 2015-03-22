@@ -3,6 +3,10 @@
 Created for a demo of TDD with [http://rubyonrails.org/](Rails), using
 [http://rspec.info/](RSpec) and [https://cukes.info/](Cucumber).
 
+This is an extremely basic to-do app. It currently allows creation of new items
+and marking of items as done, but nothing else. There is also no input
+validation, error-checking etc.
+
 To run the app:
 
     rake db:migrate
