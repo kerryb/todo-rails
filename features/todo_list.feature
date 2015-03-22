@@ -1,6 +1,5 @@
 Feature: to-do list
 
-  @wip
   Scenario: See what I've got to do
     Given I have some items in my to-do list
     When I go to the home page
