@@ -26,3 +26,7 @@ end
 Then "it appears in the list" do
   expect(page).to show_todo_item Item.new(name: @new_item_name)
 end
+
+Then "it is marked as done" do
+  expect(page).to show_item_as_done @item_1
+end
