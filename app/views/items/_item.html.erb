@@ -1,1 +1,1 @@
-<li><%= item.name %></li>
+<li><%= link_to item.name, mark_done_item_path(item), method: :post %></li>
