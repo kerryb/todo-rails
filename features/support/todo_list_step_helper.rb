@@ -10,6 +10,10 @@ module TodoListStepHelper
   def click_item item
     click_on item.name
   end
+
+  def remove_done_items
+    click_on "Remove done"
+  end
 end
 World TodoListStepHelper
 
