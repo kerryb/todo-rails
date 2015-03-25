@@ -12,4 +12,7 @@ class ItemsController < ApplicationController
     Item.mark_done params[:id]
     redirect_to action: :index
   end
+
+  def remove_done
+  end
 end
