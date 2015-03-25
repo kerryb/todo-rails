@@ -22,6 +22,11 @@ When "I click on an item" do
   click_item @item_1
 end
 
+When "I remove done items" do
+  visit root_path
+  remove_done_items
+end
+
 Then "I can see all the items" do
   expect(page).to show_todo_item @item_1
   expect(page).to show_todo_item @item_2
