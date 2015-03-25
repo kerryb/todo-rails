@@ -3,6 +3,10 @@ Given "I have some items in my to-do list" do
   @item_2 = Item.create name: "Demonstrate test-driven development"
 end
 
+When "some of the items are done" do
+  Item.mark_done @item_1.id
+end
+
 When "I go to the home page" do
   visit root_path
 end
