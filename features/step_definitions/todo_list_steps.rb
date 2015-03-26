@@ -39,3 +39,8 @@ end
 Then "it is marked as done" do
   expect(page).to show_item_as_done @item_1
 end
+
+Then "only the to-do items are left behind" do
+  expect(page).not_to show_todo_item @item_1
+  expect(page).to show_todo_item @item_2
+end

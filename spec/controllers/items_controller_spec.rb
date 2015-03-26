@@ -53,4 +53,24 @@ describe ItemsController do
       expect(response).to redirect_to action: :index
     end
   end
+
+  describe "POST remove_done" do
+    before do
+      allow(Item).to receive :remove_done
+    end
+
+    def do_remove_done
+      post :remove_done
+    end
+
+    it "removes done items" do
+      do_remove_done
+      expect(Item).to have_received(:remove_done)
+    end
+
+    it "redirects to the index" do
+      do_remove_done
+      expect(response).to redirect_to action: :index
+    end
+  end
 end

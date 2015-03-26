@@ -1,6 +1,7 @@
 <ul>
   <%= render @items %>
 </ul>
+<p><%= button_to "Remove done", remove_done_items_path %></p>
 <%= form_for Item.new do |f| %>
   <%= f.label :name, "New item:" %>
   <%= f.text_field :name %>
