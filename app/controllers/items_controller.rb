@@ -14,6 +14,7 @@ class ItemsController < ApplicationController
   end
 
   def remove_done
+    Item.remove_done
     redirect_to action: :index
   end
 end
