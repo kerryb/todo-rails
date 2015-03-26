@@ -3,6 +3,9 @@ class Item < ActiveRecord::Base
     update id, done: true
   end
 
+  def self.remove_done
+  end
+
   def to_partial_path
     done? ? "done_item" : "to_do_item"
   end
