@@ -20,4 +20,13 @@ describe Item do
       expect(item.reload).to be_done
     end
   end
+
+  describe ".remove_done" do
+    it "removes all items which are marked as done" do
+      to_do_item = Item.create name: "To-do item"
+      Item.create name: "Done item", done: true
+      Item.remove_done
+      expect(Item.all).to eq [to_do_item]
+    end
+  end
 end
