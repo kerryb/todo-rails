@@ -4,6 +4,7 @@ class Item < ActiveRecord::Base
   end
 
   def self.remove_done
+    destroy_all done: true
   end
 
   def to_partial_path
